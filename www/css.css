@@ -1,0 +1,246 @@
+:root{
+
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+
+    overflow-x: hidden;
+}
+
+.modal-content {
+    display: none;
+}
+
+.project-modal {
+    position: fixed;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+
+    background-color: #dddee4;
+    box-shadow: 0px 1px 1px 0px #00000077,
+                0px 1px 4px 0px #00000075;
+    opacity: 0;
+
+    transition: all 200ms ease-in-out;
+}
+
+.project-modal.open {
+    opacity: 1;
+    visibility: visible;
+
+    transition: all 200ms ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pic {
+    background-image: url("img/me.png");
+    background-size: cover;
+    width: 60%;
+    max-width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    opacity: 1;
+    filter: grayscale(20%);
+    margin-top: 30px;
+    transition: filter 200ms ease-in;
+}
+
+.pic:hover {
+    filter: grayscale(0%);
+    transition: filter 300ms ease-out;
+}
+
+.name {
+    text-align: center;
+    font-size: 34px;
+
+    font-family: "filosofia", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-top: 20px;
+}
+
+.role {
+    font-size: 20px;
+    font-family: "pestofresco", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    padding-top: 10px;
+}
+
+.mail {
+    font-size: 25px;
+    font-family: "pestofresco", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    padding-top: 40px;
+}
+
+.contact {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact_git-pic {
+    width: 20%;
+    max-width: 60px;
+    margin-right: 20px;
+
+    filter: grayscale(100%);
+    transition: filter 200ms ease-out;
+}
+
+.contact_git-pic:hover {
+    filter: grayscale(0%);
+    transition: filter 200ms ease-in;
+}
+
+.contact_linkedin-pic {
+    width: 10%;
+    max-width: 30px;
+
+    filter: grayscale(100%);
+
+    transition: filter 200ms ease-out;
+}
+
+.contact_linkedin-pic:hover {
+    filter: grayscale(0%);
+    transition: filter 200ms ease-in;
+}
+
+.portfolio-header {
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: "filosofia", serif;
+    font-weight: 00;
+    font-style: normal;
+}
+
+.portfolio {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 24px;
+
+    background-color: hsla(218, 20%, 76%, 0.253);
+    background-blend-mode:hard-light;
+    opacity: 0.9;
+    border-radius: 3px;
+
+    transition: all 200ms ease-out;
+}
+
+@media only screen and (min-width: 700px)  {
+    .portfolio {
+        width: 60%;
+    }
+
+    .project {
+        width: calc(50% - 5px);
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 800px)  {
+    .project {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 900px)  {
+    .project {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 400px)  {
+    .project {
+        font-size: 22px;
+    }
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: hsla(218, 20%, 76%, 0.555);
+    transition: all 200ms ease-in-out;
+}
+
+.project_header {
+    height: 30px;
+    padding: 15px;
+
+    text-align: center;
+    font-size: 1em;
+    font-family: "pestofresco", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 0px 0px 0px black;
+}
+
+.project_content {
+    flex-grow: 1;
+    padding: 10px;
+
+    font-size: 18px;
+}
+
+.project_footer {
+    height: 30px;
+    padding: 5px;
+
+    font-size: 0.75em;
+    text-align: right;
+    font-family: "pestofresco", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 0px 0px 0px black;
+}
+
+.project-scalegenius {
+    background-image: url("img/scalegenius.png");
+    background-size: cover;
+}
+
+.project-derpyeq {
+    background-image: url("img/derpyeq.png");
+    background-size: cover;
+}
+
+.project-flower {
+    background-image: url("img/flower.png");
+    background-size: cover;
+}
