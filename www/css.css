@@ -230,6 +230,11 @@ body {
     text-shadow: 0px 0px 0px black;
 }
 
+.project-neurostocks {
+    background-image: url("img/neurostocks.png");
+    background-size: cover;
+}
+
 .project-scalegenius {
     background-image: url("img/scalegenius.png");
     background-size: cover;

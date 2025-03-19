@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/van4qho.css">
-    <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/van4qho.css">
+  <link rel="stylesheet" href="css.css">
 
-    <title>Marcus Kanon</title>
+  <title>Marcus Kanon</title>
 </head>
+
 <body>
-    <div id="scalegenius" class="modal-content">
-        <a href="#" onclick="toggleProjectModal()">Close</a>
+  <div id="scalegenius" class="modal-content">
+    <a href="#" onclick="toggleProjectModal()">Close</a>
+  </div>
+  <div class="project-modal">
+  </div>
+  <div class="container">
+    <div class="pic"></div>
+    <div class="name">Marcus Kanon</div>
+    <div class="role">Software Developer</div>
+    <div class="portfolio-header">
+      Portfolio
     </div>
-    <div class="project-modal">
+    <div class="portfolio">
+      <div class="project project-neurostocks">
+        <div class="project_header">NeuroStocks</div>
+        <div class="project_content"></div>
+        <div class="project_footer">Kafka | AI | .NET | Flutter</div>
+      </div>
+      <div class="project project-scalegenius">
+        <div class="project_header">ScaleGenius</div>
+        <div class="project_content"></div>
+        <div class="project_footer">HTML | CSS | JavaScript | PWA</div>
+      </div>
+      <div class="project project-derpyeq">
+        <div class="project_header">DerpyEQ</div>
+        <div class="project_content"></div>
+        <div class="project_footer">C++ | JUCE Framework</div>
+      </div>
+      <div class="project project-flower">
+        <div class="project_header">Flow:er</div>
+        <div class="project_content"></div>
+        <div class="project_footer">C# | .NET MAUI Blazor</div>
+      </div>
+
+
+
     </div>
-    <div class="container">
-        <div class="pic"></div>
-        <div class="name">Marcus Kanon</div>
-        <div class="role">Software Developer</div>
-        <div class="portfolio-header">
-            Portfolio
-        </div>
-        <div class="portfolio">
-            <div class="project project-scalegenius">
-                <div class="project_header">ScaleGenius</div>
-                <div class="project_content"></div>
-                <div class="project_footer">HTML | CSS | JavaScript | PWA</div>
-            </div>
-            <div class="project project-derpyeq">
-                <div class="project_header">DerpyEQ</div>
-                <div class="project_content"></div>
-                <div class="project_footer">C++ | JUCE Framework</div>
-            </div>
-            <div class="project project-flower">
-                <div class="project_header">Flow:er</div>
-                <div class="project_content"></div>
-                <div class="project_footer">C# | .NET MAUI Blazor</div>
-            </div>
-
-
-
-        </div>
-        <div class="mail">marcus@kanon.app</div>
-        <div class="contact">
-            <a href="https://git.kanon.app/Kanon/"><img class="contact_git-pic" src="img\Git-Logo-2Color.png" alt="Git"></a>
-            <a href="https://www.linkedin.com/in/marcus-kanon-52b49521b/"><img class="contact_linkedin-pic" src="img\LI-In-Bug.png" alt="LinkedIn"></a>
-        </div>
+    <div class="mail">marcus@kanon.app</div>
+    <div class="contact">
+      <a href="https://github.com/Marcus-Kanon"><img class="contact_git-pic" src="img\Git-Logo-2Color.png" alt="Git"></a>
+      <a href="https://www.linkedin.com/in/marcus-kanon-52b49521b/"><img class="contact_linkedin-pic"
+          src="img\LI-In-Bug.png" alt="LinkedIn"></a>
     </div>
+  </div>
 
-    <script>
-        const projectModal = document.querySelector(".project-modal");
+  <script>
+    const projectModal = document.querySelector(".project-modal");
 
-        function toggleProjectModal(contentDiv) {
-            if(projectModal.classList.contains("open")) {
-                projectModal.classList.remove("open");
-                document.body.style.overflow = "auto";
-            }
-            else {
-                projectModal.innerHTML = document.querySelector("#" + contentDiv).innerHTML;
-                projectModal.classList.add("open");
-                document.body.style.overflow = "hidden";
-            }
-        }
-    </script>
+    function toggleProjectModal(contentDiv) {
+      if (projectModal.classList.contains("open")) {
+        projectModal.classList.remove("open");
+        document.body.style.overflow = "auto";
+      }
+      else {
+        projectModal.innerHTML = document.querySelector("#" + contentDiv).innerHTML;
+        projectModal.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+    }
+  </script>
 </body>
+
 </html>
